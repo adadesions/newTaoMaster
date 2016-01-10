@@ -1,5 +1,6 @@
 Template.courseShow.onRendered(function () {
   Session.set('courseContainer','healingCourse')
+
 })
 
 
@@ -10,7 +11,7 @@ Template.courseShow.helpers({
 })
 
 Template.courseShow.events({
-  'click .course-item': function (e) {
+  'click .item': function (e) {
     let courseId = $(e.target).attr('id')
     Session.set('courseContainer',courseId)
   }
