@@ -59,21 +59,6 @@
     </div>
 </template>
 
-<template name="blockSocial">
-  <div class="container">
-    <hr>
-    <div class="row">
-      <div class="col-lg-6">
-        <br>
-        <div class="fb-page" data-href="https://www.facebook.com/Tao-Kungfu-System-199700286891323" data-tabs="timeline,events,messages" data-width="400" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
-        <br>
-        <br>
-      </div>
-    </div>
-    <p>© 2015 Tao Kung Fu System</p>
-  </div>
-</template>
-
 
 <template name="healingCourse">
   <!-- card 1 -->
@@ -440,5 +425,29 @@ Also the practitioner to pass to the Wind level must learn the Tao practice of I
         </div>
       </div>
     </div>
+</template>
+
+
+
+<template name="blockSocial">
+  <div class="container">
+    <hr>
+    <div class="row">
+      <div class="col-lg-6">
+        <br>
+        <div class="fb-page" data-href="https://www.facebook.com/Tao-Kungfu-System-199700286891323" data-tabs="timeline,events,messages" data-width="400" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+        <br>
+        <br>
+      </div>
+      <div class="col-lg-6">
+          <div id="gallerySocial">
+            {{#each images}}
+              <a href="{{url}}"><img src="{{url}}"/></a>
+            {{/each}}
+          </div>
+    </div>
+  </div>
+    <p>© 2015 Tao Kung Fu System</p>
+  </div>
 </template>
 <!-- End Home -->
