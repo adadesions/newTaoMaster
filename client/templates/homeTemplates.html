@@ -49,16 +49,6 @@
 </template>
 
 
-<template name="courseShow">
-  <div class="container">
-        {{> navigatorCourse}}
-        <hr>
-          <div class="row">
-            {{> Template.dynamic template=courseContainer}}
-          </div>
-    </div>
-</template>
-
 
 <template name="healingCourse">
   <!-- card 1 -->
@@ -76,7 +66,7 @@
         <p>
         In this Basic Level, the practitioners will learn how to feel the Qi, how to move the Qi in the body, how to transform the negative energy into positive energy and how to prepare the physical body condition of the Meridian  to be able to grow and move a bigger quantity of Qi.
         </p>
-        <a href="#">General Qi Gong</a>
+        <a id="generalQiGong" class="sub-course" href="#">General Qi Gong</a>
         <br>
         <a href="#">Inner Smile</a>
         <br>
@@ -454,5 +444,47 @@ Also the practitioner to pass to the Wind level must learn the Tao practice of I
   </div>
     <p>© 2015 Tao Kung Fu System</p>
   </div>
+</template>
+
+
+
+
+<template name="courseShow">
+  <div class="container">
+        {{> navigatorCourse}}
+        <hr>
+          <div class="row">
+            {{> Template.dynamic template=courseContainer}}
+          </div>
+    </div>
+
+
+    <!-- Modal -->
+
+    <div id="generalQiGong-modal" class="ui modal myModal">
+      <i class="close icon"></i>
+      <div class="header">
+        Profile Picture
+      </div>
+      <div class="image content">
+        <div class="ui medium image">
+          <img src="/images/avatar/large/chris.jpg">
+        </div>
+        <div class="description">
+          <div class="ui header">We've auto-chosen a profile image for you.</div>
+          <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+          <p>Is it okay to use this photo?</p>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="ui black deny button">
+          Nope
+        </div>
+        <div class="ui positive right labeled icon button">
+          Yep, that's me
+          <i class="checkmark icon"></i>
+        </div>
+      </div>
+    </div>
 </template>
 <!-- End Home -->
