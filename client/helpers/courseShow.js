@@ -18,6 +18,9 @@ Template.courseShow.events({
 
   'click .sub-course':function (e) {
     let id = '#'+$(e.target).attr('id')+'-modal'
-      $(id).modal('show','can fit','refresh')
+      $(id).modal('show').css({
+        'margin-top':'-230px',
+        'margin-bottom':'60px'
+      })
   }
 })
