@@ -1,0 +1,14 @@
+<template name="pictureGallery">
+  <div class="container">
+    <div class="col-lg-12">
+      <h3>Picture Gallery</h3>
+      <hr>
+      <div id="gallery">
+        {{#each images}}
+          <a><img src="{{url}}" /></a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</template>
+<!-- End Picture Gallery -->
