@@ -13,6 +13,7 @@ Template.blockSocial.onRendered(function () {
   waitThumbnailsLoad: true,
   justifyThreshold: 0.35,
   cssAnimation: false,
+  rel : 'gallery1',
   imagesAnimationDuration: 300
     }).on('jg.complete', function (e) {
       // this callback runs after the gallery layout is created
@@ -22,7 +23,9 @@ Template.blockSocial.onRendered(function () {
     }).on('jq.rowflush', function (e) {
       // this callback runs when a new row is ready
     });
+
 })
+
 
 Template.blockSocial.helpers({
   images: function () {
