@@ -14,5 +14,10 @@ Template.courseShow.events({
   'click .item': function (e) {
     let courseId = $(e.target).attr('id')
     Session.set('courseContainer',courseId)
+  },
+
+  'click .sub-course':function (e) {
+    let id = '#'+$(e.target).attr('id')+'-modal'
+      $(id).modal('show')
   }
 })

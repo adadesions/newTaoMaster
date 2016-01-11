@@ -4,8 +4,6 @@
   {{> courseShow}}
 </template>
 
-
-
 <template name="showContent">
   <div class="container">
   <br>
@@ -21,26 +19,26 @@
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="/photo-1449168013943-3a15804bb41c.jpg" alt="Chania">
+        <img src="/head006.jpg" alt="Thailand">
         <div class="carousel-caption">
-          <h3>Chania</h3>
-          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+          <h3>Thailand</h3>
+          <!-- <p>The atmosphere in Chania has a touch of Florence and Venice.</p> -->
         </div>
       </div>
 
       <div class="item">
-        <img src="/photo-1450849608880-6f787542c88a.jpg" alt="Chania">
+        <img src="/head002.jpg" alt="Italy">
         <div class="carousel-caption">
-          <h3>Chania</h3>
-          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+          <h3>Italy</h3>
+          <!-- <p>The atmosphere in Chania has a touch of Florence and Venice.</p> -->
         </div>
       </div>
 
       <div class="item">
-        <img src="/photo-1449157291145-7efd050a4d0e.jpg" alt="Flower">
+        <img src="/head005.jpg" alt="Italy">
         <div class="carousel-caption">
-          <h3>Flowers</h3>
-          <p>Beatiful flowers in Kolymbari, Crete.</p>
+          <h3>Italy</h3>
+          <!-- <p>Beatiful flowers in Kolymbari, Crete.</p> -->
         </div>
       </div>
     </div>
@@ -48,16 +46,6 @@
 </div>
 </template>
 
-
-<template name="courseShow">
-  <div class="container">
-        {{> navigatorCourse}}
-        <hr>
-          <div class="row">
-            {{> Template.dynamic template=courseContainer}}
-          </div>
-    </div>
-</template>
 
 
 <template name="healingCourse">
@@ -76,15 +64,15 @@
         <p>
         In this Basic Level, the practitioners will learn how to feel the Qi, how to move the Qi in the body, how to transform the negative energy into positive energy and how to prepare the physical body condition of the Meridian  to be able to grow and move a bigger quantity of Qi.
         </p>
-        <a href="#">General Qi Gong</a>
+        <a id="generalQiGong" class="sub-course" href="#">General Qi Gong</a>
         <br>
-        <a href="#">Inner Smile</a>
+        <a id="innerSmile" class="sub-course" href="#">Inner Smile</a>
         <br>
-        <a href="#">6 Healing Sounds</a>
+        <a id="6HealingSounds" class="sub-course" href="#">6 Healing Sounds</a>
         <br>
-        <a href="#">Microcosmic Orbit</a>
+        <a id="microcosmicOrbit" class="sub-course" href="#">Microcosmic Orbit</a>
         <br>
-        <a href="#">Tao Yin</a>
+        <a id="taoYin" class="sub-course" href="#">Tao Yin</a>
       </div>
     </div>
   </div>
@@ -104,17 +92,17 @@
         </p>
         <br>
         <br>
-        <a href="#">Empty Force</a>
+        <a id="emptyForce" class="sub-course" href="#">Empty Force</a>
         <br>
-        <a href="#">3 Fire 6 Directions</a>
+        <a id="3Fire6Directions" class="sub-course" href="#">3 Fire 6 Directions</a>
         <br>
-        <a href="#">Stem Cells System</a>
+        <a id="stemCellsSystem" class="sub-course" href="#">Stem Cells System</a>
         <br>
-        <a href="#">Sexual Healing Qi Gong Man</a>
+        <a id="sexualHealingQiGongMan" class="sub-course" href="#">Sexual Healing Qi Gong Man</a>
         <br>
-        <a href="#">Sexual Healing Qi Gong Woman</a>
+        <a id="sexualHealingQiGongWoman" class="sub-course" href="#">Sexual Healing Qi Gong Woman</a>
         <br>
-        <a href="#">Sexual Healing Qi Gong Couple</a>
+        <a id="sexualHealingQiGongCouple" class="sub-course" href="#">Sexual Healing Qi Gong Couple</a>
       </div>
     </div>
   </div>
@@ -138,13 +126,13 @@
         </p>
         <br>
         <br>
-        <a href="#">Fusion of the 5 Elements 1</a>
+        <a id="fusionofthe5Elements1" class="sub-course" href="#">Fusion of the 5 Elements 1</a>
         <br>
-        <a href="#">Fusion of the 5 Elements 2</a>
+        <a id="fusionofthe5Elements2" class="sub-course" href="#">Fusion of the 5 Elements 2</a>
         <br>
-        <a href="#">Fusion of the 5 Elements 3</a>
+        <a id="fusionofthe5Elements3" class="sub-course" href="#">Fusion of the 5 Elements 3</a>
         <br>
-        <a href="#">Kuji In</a>
+        <a id="kujiIn" class="sub-course" href="#">Kuji In</a>
       </div>
     </div>
   </div>
@@ -200,6 +188,7 @@
     <!-- card 5 -->
       <div class="col-lg-4">
         <div class="thumbnail">
+          <img src="/m001.jpg" alt="...">
           <div class="caption">
             <h3>Iron Shirt Qi Gong 3</h3>
             <p>In the third level of Iron Shirt, one learns how to strengthen the bones by increasing bone density and structure and to re-grow the marrow through bone breathing and internal sexual organ massage. One also learns how to direct internal power to the higher centers. This level of Iron Shirt works directly on the organs, bones and tendons in order to strengthen the entire system beyond its ordinary capacity.
@@ -211,6 +200,7 @@ An extremely efficient method of vibrating the internal organs allows the practi
       <!-- card 6 -->
         <div class="col-lg-4">
           <div class="thumbnail">
+            <img src="/m002.jpg" alt="...">
             <div class="caption">
               <h3>Tan Tien Qi Gong</h3>
               <p>Tan Tien Qi Gong is o­ne of the best Taoist Qi Gong practices used to develop the Tan Tien and Perineum power. We need Qi and Qi pressure in the Tan Tien as a foundation for most of the Martial Qi Gong practices, especially for Iron Shirt Qi Gong and Tai Chi Qi Gong and meditation.
@@ -446,7 +436,7 @@ Also the practitioner to pass to the Wind level must learn the Tao practice of I
         <br>
           <div id="gallerySocial">
             {{#each images}}
-              <a href="#"><img href="{{url}}" src="{{url}}"/></a>
+              <a href="#"><img href="{{url}}" src="{{url}}"/></a>...
             {{/each}}
           </div>
       </div>
@@ -460,5 +450,224 @@ Also the practitioner to pass to the Wind level must learn the Tao practice of I
     <p>© 2015 Tao Kung Fu System</p>
   </div>
 <br>
+</template>
+
+
+
+
+<template name="courseShow">
+  <div class="container">
+        {{> navigatorCourse}}
+        <hr>
+          <div class="row">
+            {{> Template.dynamic template=courseContainer}}
+          </div>
+    </div>
+
+
+    <!-- Modal Basic-->
+
+    <div id="generalQiGong-modal" class="ui modal basic fullscreen fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey grey">General Qi Gong</div>
+          <p>General Qi Gong is a series of practices that focus on the movement of every part of the body, especially joint, in order to keep them soft and flexible and stretch every muscle and tendons for keep them strong and fit..</p>
+          <p>Also connecting Mind-Body during this special stretching we activate and stimulate all the meridian in our body for let the energy flow naturally.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="innerSmile-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">Inner Smile</div>
+          <p>Inner Smile practice teaches you how to get in touch with your internal organs, smiling to them, and transforming them into love, kindness, gentleness, and healing energy.
+By smiling to the organs and thanking them for the work they do, eventually we will reawaken the intelligence of the body. We are often so out of touch with our bodies and emotions that we do not notice inner disharmony developing until it finally manifests itself as a serious illness.
+The Inner Smile is a powerful internal healing and relaxation meditation. Deep relaxation dissolves physical and mental tensions that can cause energy blockages and unhealthy Chi.
+The Inner Smile enhances the energy of the organs and glands, our life force (Qi) in general, and develops the inner connections between mind and internal organs.
+It makes us more aware of our body and inner being, because we learn to communicate with our organs, glands, spinal cord and other specific parts of our body, as well as our soul.
+Practicing the Inner Smile daily provides a regular scheduled time to look inside, to keep in touch with the state of our inner organs, our Qi, our breath and our emotions.
+Taoists discovered that consciousness is rooted not only in the brain alone, but also in the vital organs and in the more subtle sense in each of the cells.</p>
+          <p>Inner Smile practice has many level, starting with a simple connection between internal organs, going to a complete internal-external harmony of vibrations and colors.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="6HealingSounds-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">6 Healing Sounds</div>
+          <p>Thousands of years ago Taoist Masters discovered in their meditations that each of the 6 organs has different living vibration that can be ear as sound. They discover even that when the organ sick, this vibration change, changing the sound that each organ emit. </p>
+          <p>The practice of the “6 Healing Sounds”, work on keeping the correct vibration and frequencies to keep the organs in optimal condition by preventing and alleviating illness. To accompany the “6 Healing Sounds” practice, 6 accompanying postures were developed to activate the acupuncture meridians, or energy channels, of the organs.</p>
+          <p>Detoxification through the “6 Healing Sounds” practice is so far is one of the best ways to clean out the organs, because it employs fresh energy to clean them. People spend a lot of money for herbs and drugs in order to cleanse and detoxify the organs. A lot of times people will experience moving of gas, or loose or very bad smelling bowel movements; these also are indications of ongoing detoxification.</p>
+          <p>The Best Detoxification is through your own Life Force</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="microcosmicOrbit-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">Microcosmic Orbit </div>
+          <p>The Microcosmic Orbit is the foundation of all the Healing Qi Gong practices.</p>
+          <p>Each new practice is dependent upon the high quality of your meditations and your ability to perfect the Microcosmic Orbit. </p>
+          <p>The Microcosmic Orbit Meditation awakens, circulates and directs Chi through the “Governator Channel”, which ascends from the base of the spine up to the head and the “Functional Channel”, which runs from the tip of the tongue down the middle of the torso to the perineum.</p>
+          <p>The meditations of the Microcosmic Orbit strengthen the 'Original Chi' and teach you the basic fullscreens of circulating Chi. They allow the palms, the soles of the feet, the mideyebrow point and the crown to open. These specific locations are the major points there energy can be absorbed, condensed and transformed into fresh new life force.</p>
+          <p>Dedicated practice of this ancient esoteric method eliminates stress and nervous tension, energize the internal organs, restores health to damaged tissue and builds a strong sense of personal well-being.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="taoYin-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">Tao Yin</div>
+          <p>Tao Yin is a form of moving meditation that relaxes the body, opens the meridians, and clears the mind. It also gives a strong base as it focuses on the lower back, the lumbar and the psoas muscles.</p>
+          <p>Tao Yin is an important part of the Taoist System as a whole.</p>
+          <p>All the Taoist practices mutually support each other as a unique way to develop our inner potential.</p>
+          <p>Tao Yin is a perfect warm up before any of the Tao KungFu System meditation techniques: by relaxing the body, opening the meridians and calming the mind, it leads to a deeper meditation.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- Medium -->
+    <div id="emptyForce-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">Empty Force</div>
+          <p>The Empty Force is another practice of the Tao KungFu System that works using the saliva to collect and move the Qi energy in the body.</p>
+          <p>The Taoists know that saliva is the fountain of life and mix it with Qi they called “Golden Elixir”. </p>
+          <p>It is recognized by western scientists to be an extremely complex fluid containing a huge quantity of substances that keep our health in a perfect condition.</p>
+          <p>Saliva has a role in digestion, electrolyte balance, and control of our oral micro flora, tissue maintenance, enamel maturation, acid neutralization and behavior. Its functions include moistening of oral tissues, protecting teeth from cavities, aiding speech, acting as a solvent necessary for taste and as a wetting agent to facilitate swallowing.</p>
+          <p>Golden Elixir, also known as nectar, is the fountain of life or water of life. This is the mixture of saliva, other hormonal fluids and external essences that, when mixed, becomes the Elixir. Taoists believe that this Elixir is a major transformer for the higher spiritual work, and has the power to heal many diseases. Some Taoist texts recommend swallowing the saliva up to 1,000 times a day for spiritual work and healing.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="3Fire6Directions-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">3 Fire 6 Directions</div>
+          <p>The “3 Fire 6 Directions” is one of the practice of the Tao KungFu System that teach us how to create the 3 fire in the body and condense them to create the “Holy Fire”.</p>
+          <p>This “Holy Fire” will balance the high quantity of Water that normally is 70% and is already in our body.</p>
+          <p>Expanding the Qi in every of the 6 direction, we became the center of our Inner Universe and we harmonize our energy-flow by drawing the Qi from the universe for our spiritual and physical grow.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="stemCellsSystem-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">Stem Cells System</div>
+          <p>Stem cells are neutral cells that can change themselves into different tissue types where need it. </p>
+          <p>The purification of stem cells taken from umbilical cord blood, allows scientists to research the function of the immune system and to develop treatments for diseases such AIDS and leukemia.</p>
+          <p>Stem cells can be found in adult human beings. Adult stem cells reproduce daily to provide certain specialized cells - for example 200 billion red blood cells are created each day in the body. Until recently it was thought that each of these cells could produce just one particular type of cell - this is called differentiation however in the past few years, evidence has been gathered of stem cells that can transform into several different forms. Bone marrow stem cells are known to be able to transform into liver, nerve, muscle and kidney cells. </p>
+          <p>Useful sources of adult stem cells are being found in organs all over the body. Researchers have extracted stem cells from skin that are able to differentiate into many types of tissue, including neurons, smooth muscle cells and fat-cells. In this special technique we stimulate the body to keep producing the stem cells by drawing the Qi in our body and hitting the body and the internal organs.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="sexualHealingQiGongMan-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">Sexual Healing Qi Gong Man</div>
+          <p>The Taoist masters 5000 years ago, discovered that the main way for the men to lose the Qi of the body is through ejaculation, and so they developed a way to control and recycle this sexual energy through the practice of Testicle Breathing, Power Lock and the Orgasmic Upward Draw.</p>
+          <p>By learning to separate orgasm and ejaculation – two distinct physical processes – men can transform a momentary release into countless peaks of whole body orgasms without losing Qi.</p>
+          <p>In addition to becoming better sexual partners, multi-orgasmic men enjoy increased vitality and longevity because they minimize the fatigue and depletion that follow ejaculation -without celibacy!</p>
+          <p>Cultivating, conserving, redirecting and circulation the generative force of the “Jing Qi” ,from the sexual organs to higher centers of the body invigorates and ejuvenates all the vital functions and activates the higher forces.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="sexualHealingQiGongWoman-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">Sexual Healing Qi Gong Woman</div>
+          <p>Women lose little sexual energy through orgasm, but instead lose it primarily through menstruation and childbearing. The sexual guidance and exercises presented are being introduced plainly to the Western public for the first time.</p>
+          <p>For thousands of years Taoist masters taught these secrets only to very small numbers of people in the royal courts and in esoteric circles, who were sworn to silence. These are the 3 main practices that women can use to cultivate and enhance their sexual energy: the Ovarian Breathing, Breast Massage and the Orgasmic Upward Draw. When this practice is mastered one can experience a total body orgasm that is beyond ordinary vaginal orgasm without losing life-force energy.</p>
+          <p>A series of exercises with a jade or stone egg is used to strengthen the urogenital and pelvic diaphragm, the muscles of the vagina and the glands, tendons and nervous system. The practice can shorten menstruation, reduce cramps and compress more life force energy (Chi) into the ovaries for more sexual and creative power.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="sexualHealingQiGongCouple-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">Sexual Healing Qi Gong Couple</div>
+          <p>Men and women have different sexual energies – and too often this leads to disharmony, preventing us from fully exploring our sexual potential. By harnessing the power of an ancient tradition of sexual wisdom you and your partner can learn to use physical and psychological techniques to experience the bliss of a whole body sexual experience with orgasm after orgasm.</p>
+          <p>The unique "Sexercises" presented can help anyone go deeper into a loving relationship. The art that has evolved over centuries of Taoist understanding can be brought to life again today to further expand the healing power for lovers.</p>
+          <p>Couples will find and increase their sexual energy potential, and deepen their physical compatibility, as well as develop an ecstatic form of acupressure. Sexuality taught as a way for health and healing, spiritual growth and longevity.</p>
+        </div>
+      </div>
+    </div>
+ <!-- Advance -->
+    <div id="fusionofthe5Elements1-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">Fusion of the 5 Elements 1</div>
+          <p>Fusion of the Five Elements is the first level of meditation in a Taoist practice also known as Fusion of the Five Forces in the Universe. It is the beginning of Inner Alchemy, a scientific process by which you gain control over the energies of your inner universe so that a connection can be made to the tremendous energy of the universe beyond the body.</p>
+          <p>This energy becomes useful for self-healing, day-to-day living and reaching spiritual goals. The Fusion meditation is the first step in learning to control the generation and flow of emotional, mental and physical energies within your body. The practice teaches you how to locate and dissolve the negative energies hidden inside your body.</p>
+          <p>Using the Taoist Five Element Theory, a connection is made between the five outer senses - eyes, tongue, mouth, nose, ears - and the Five major emotions - anger, hate, worry, sadness, and fear. O­nce the negative emotion is identified with the organ it is stored in, it can be controlled.</p>
+          <p>The Fusion meditation shows you step by step how the negative emotions are removed from the organs.</p>
+          <p>Negative emotions are neither suppressed nor expressed. Instead, their negative energy is brought to specific points in the body where it is easily neutralized, purified, and then transformed back into your original positive, creative energy. The great secret of crystallizing and storing your original positive energy in a mysterious pearl is revealed for the first time in the Fusion alchemical formula.</p>
+          <p>This pearl is the essence of our life force energy, or Chi. It is central to nourishing the physical body, and later to nourishing the soul, or energy body. In more advanced Fusion practice, your soul/energy body becomes very controllable and its power can be balanced, strengthened and expanded to connect with the essence of the Earth and Star energies. The Fusion of the Five Elements practice is the essential first step toward complete emotional and spiritual development.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="fusionofthe5Elements2-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">Fusion of the 5 Elements 2</div>
+          <p>Forming the Pakuas We can connect our being with the powers of the Earth and the Universe. The organs and senses connect using the eight forces of the Pakua via the Fusion Practice. Negative emotional energy is balanced with positive energy and fused into a pearl of pure life-force energy. Energy Body, Spirit Body Making your way along the path, you become aware of the great value of the practices in preparing the spirit body to move into worlds beyond - and back. You'll move from balance to resonance to love.</p>
+          <p>Manifest the Positive with discipline and perseverance your practice will manifest a life that suits you perfectly. With smiles and diligence the fusion meditations nurture positive energies, forming the compassion pearl.</p>
+          <p>You'll detoxify, nourish and integrate the physical body, the energy body and the emotions, allowing the heavenly and earthly forces to balance you. Clarity, Wisdom, Truth Subtle and powerful, the Fusion Practice will change your life. Relax, and come along o­n a journey both remarkable and priceless. The way will open.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="fusionofthe5Elements3-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+        <div class="description container">
+          <div class="ui header grey">Fusion of the 5 Elements 3</div>
+          <p>Fusion of the Eight Psychic Channels is the last of the three Fusion practices. It teaches you the last techniques and meditation to make you ready and prepared to start the Practice of the Immortal Tao. In this practice, you will learn how to open and clean the Great Bridge and Regulator Channels, to protect your spine and energy field, to seal the aura and the senses. You will also learn how to open crown your head.</p>
+          <p>Finally, you will learn to transform the Microcosmic Orbit, the Thrusting Channels and the Belt Channel in the Energy Body. With the help of many diagrams, you will first be able to locate and discover the practical uses of the points of the Great Bridge and Regulator Channels. You will then learn to concentrate o­n the flow of energy in the channels and to open and connect each point to enable the energy to flow freely.</p>
+          <p>The Spinal Cord Microcosmic Orbit practice strengthens and wraps the spinal cord with energy. Sealing the Aura enables the practitioner to create a thicker aura to protect the body, while opening the crown energy helps to clear the brain and facilitates the reception of higher frequencies.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="kujiIn-modal" class="ui modal basic fullscreen">
+      <i class="close icon"></i>
+      <div class="image content">
+<<<<<<< HEAD
+        <div class="description">
+          <div class="ui header">Kuji In</div>
+=======
+        <div class="description container">
+          <div class="ui header grey">Kuji In</div>
+>>>>>>> e1903bd6f6a7257447e81b252f3723e240abdad1
+          <p>The Nine Hand Seals Technique and its related teachings have their origins in the Hindu religion where they were initially used by a few groups from the lower castes. These mystical techniques were a means used by the monks to bring the virtues of the spirit into mundane experience. The original form was not as developed as the system we have today. Thus, this historical perspective refers to the origins of the current system, not the modern Nine Hand Seals Technique as it exists today. Buddhism came out of Hinduism, and, with it, the Nine Hand Seals Technique became ever more popular. The original mudras remain the same as those taught in ancient times, but Buddhist mantras were also added to the system to enhance it. The original mantras were in Sanskrit.</p>
+          <p>The Buddhist movement later traveled to China, where the tradition was passed on to the hermetic and esoteric groups there. Boa Pu Zhi, a wise Chinese master, was the first to put the nine hand mudras on paper, in his work published around the 3rd century AC. Eventually, the techniques migrated to Japan, along with esoteric Buddhism, where the mantras were translated into Japanese phonetics.</p>
+          <p>The modern Kuji-In technique is composed of a ritual process comprising the traditional application of the Buddhist “three secrets” (mudra, mantra, and mandala). The true Kuji-In secret lies within the contemplation of that philosophy which we use to change our attitude about life.</p>
+        </div>
+      </div>
+    </div>
 </template>
 <!-- End Home -->
