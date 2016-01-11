@@ -1,7 +1,7 @@
 Template.blockSocial.onRendered(function () {
   $('#gallerySocial').justifiedGallery({
   // option: default,
-  rowHeight: 120,
+  rowHeight: 70,
   maxRowHeight: 0,
   lastRow: 'nojustify',
   fixedHeight: false,
