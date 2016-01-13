@@ -1,29 +1,29 @@
 Template.pictureGallery.onRendered(function () {
-  //   $('#gallery').justifiedGallery({
-  //   // option: default,
-  //   rowHeight: 120,
-  //   maxRowHeight: 0,
-  //   lastRow: 'nojustify',
-  //   fixedHeight: false,
-  //   captions: true,
-  //   margins: 1,
-  //   randomize: false,
-  //   extension: /.[^.]+$/,
-  //   refreshTime: 250,
-  //   waitThumbnailsLoad: true,
-  //   justifyThreshold: 0.35,
-  //   cssAnimation: false,
-  //   imagesAnimationDuration: 300
-  // }).on('jg.complete', function (e) {
-  //   // this callback runs after the gallery layout is created
-  //     $('#gallery img').swipebox();
-  // }).on('jg.resize', function (e) {
-  //   // this callback runs after the gallery is resized
-  // }).on('jq.rowflush', function (e) {
-  //   // this callback runs when a new row is ready
-  // });
+    GoogleMaps.load();
 
-  GoogleMaps.load();
+    $('#gallery').justifiedGallery({
+    // option: default,
+    rowHeight: 120,
+    maxRowHeight: 0,
+    lastRow: 'nojustify',
+    fixedHeight: false,
+    captions: true,
+    margins: 1,
+    randomize: false,
+    extension: /.[^.]+$/,
+    refreshTime: 250,
+    waitThumbnailsLoad: true,
+    justifyThreshold: 0.35,
+    cssAnimation: false,
+    imagesAnimationDuration: 300
+  }).on('jg.complete', function (e) {
+    // this callback runs after the gallery layout is created
+      $('#gallery img').swipebox();
+  }).on('jg.resize', function (e) {
+    // this callback runs after the gallery is resized
+  }).on('jq.rowflush', function (e) {
+    // this callback runs when a new row is ready
+  });
 })
 
 Template.pictureGallery.onCreated(function() {
@@ -40,20 +40,43 @@ Template.pictureGallery.onCreated(function() {
         anchor: new google.maps.Point(0, 32)
       };
 
+    var image2 = {
+        url: '/m2_thumbnail.jpg',
+        // This marker is 20 pixels wide by 32 pixels high.
+        size: new google.maps.Size(150, 90),
+        // The origin for this image is (0, 0).
+        origin: new google.maps.Point(0, 0),
+        // The anchor for this image is the base of the flagpole at (0, 32).
+        anchor: new google.maps.Point(0, 32)
+      };
+
     var marker = new google.maps.Marker({
       position: map.options.center,
       map: map.instance,
       title: 'Hello',
       icon: image,
     });
-    marker.addListener('click', add_google_logo);
 
+    var marker2 = new google.maps.Marker({
+      position: map.options.center2,
+      map: map.instance,
+      title: 'Hello',
+      icon: image2,
+    });
+    // marker.addListener('click', function () {
 
-    function add_google_logo() {
-      $(this).swipebox()
-    }
+    // });
+    google.maps.event.addListener(marker, 'click', function () {
 
+      $('.galleryMapImg:first').trigger('click')
 
+    })
+    
+    google.maps.event.addListener(marker2, 'click', function () {
+
+      $('.galleryMapImg:first').trigger('click')
+
+    })
   });
 });
 
@@ -90,6 +113,7 @@ Template.pictureGallery.helpers({
       // Map initialization options
       return {
         center: new google.maps.LatLng(latLng.lat, latLng.lng),
+        center2: new google.maps.LatLng(14.95009216614806, 103.02798271179199),
         options: {
           mapTypeId: google.maps.MapTypeId.ROADMAP
         },

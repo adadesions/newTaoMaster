@@ -4,14 +4,15 @@
         <h3>Picture Gallery</h3>
         <hr>
       </div>
-      <div id="gallery">
-          <div class="map-container">
-            {{> googleMap name="taoMap" options=mapGallery}}
+        <div class="map-container">
+          {{> googleMap name="taoMap" options=mapGallery}}
 
-          <!-- {{#each images}}
-            <a id="imgs"><img href="{{url}}" src="{{url}}" /></a>
-          {{/each}} -->
-          </div>
+
+        </div>
+        <div id="gallery" class="galleryMap" hidden>
+          {{#each images}}
+            <a><img class="galleryMapImg"  href="{{url}}" src="{{url}}" /></a>
+          {{/each}}
         </div>
   </div>
 </template>

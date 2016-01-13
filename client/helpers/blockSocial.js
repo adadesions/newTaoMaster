@@ -17,8 +17,7 @@ Template.blockSocial.onRendered(function () {
   imagesAnimationDuration: 300
     }).on('jg.complete', function (e) {
       // this callback runs after the gallery layout is created
-      $('#gallerySocial img').swipebox();
-      $(selector).click();
+      $('#gallerySocial img').swipebox(); 
     }).on('jg.resize', function (e) {
       // this callback runs after the gallery is resized
     }).on('jq.rowflush', function (e) {
