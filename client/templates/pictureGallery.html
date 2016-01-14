@@ -6,12 +6,25 @@
       </div>
         <div class="map-container">
           {{> googleMap name="taoMap" options=mapGallery}}
-
-
         </div>
         <div id="gallery" class="galleryMap" hidden>
-          {{#each images}}
-            <a><img class="galleryMapImg"  href="{{url}}" src="{{url}}" /></a>
+          {{#each images 'pattaya'}}
+            <a><img class="galleryMapImg1"  href="{{this}}" src="{{this}}" /></a>
+          {{/each}}
+        </div>
+        <div id="gallery" class="galleryMap" hidden>
+          {{#each images 'turkey'}}
+            <a><img class="galleryMapImg2"  href="{{this}}" src="{{this}}" /></a>
+          {{/each}}
+        </div>
+        <div id="gallery" class="galleryMap" hidden>
+          {{#each images 'kunming'}}
+            <a><img class="galleryMapImg3"  href="{{this}}" src="{{this}}" /></a>
+          {{/each}}
+        </div>
+        <div id="gallery" class="galleryMap" hidden>
+          {{#each images 'italy'}}
+            <a><img class="galleryMapImg4"  href="{{this}}" src="{{this}}" /></a>
           {{/each}}
         </div>
   </div>
