@@ -189,12 +189,12 @@ Template.pictureGallery.helpers({
 
 
   mapGallery: function() {
-    var latLng = Geolocation.latLng();
+    // var latLng = Geolocation.latLng();
     // Make sure the maps API has loaded
-    if (GoogleMaps.loaded() && latLng) {
+    if (GoogleMaps.loaded()) {
       // Map initialization options
       return {
-        center: new google.maps.LatLng(latLng.lat, latLng.lng),
+        center: new google.maps.LatLng(12.927608, 100.877081),
         options: {
           mapTypeId: google.maps.MapTypeId.ROADMAP
         },
