@@ -2,6 +2,11 @@
   <div class="container">
       <div class="row">
         <div class="col-lg-12 col-xs-12">
+          <div class="ui right aligned lang container ">
+            Language :
+            <a href="#"><i class="us flag"></i></a>
+            <a href="#"><i class="it flag"></i></a>
+          </div>
           {{> navigator}}
         </div>
       </div>
@@ -28,14 +33,25 @@
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav pull-right pull-down">
-        <li class="active"><a href="{{pathFor 'home'}}">Home<span class="sr-only">(current)</span></a></li>
-          <li><a href="{{pathFor 'masterTaoMasa'}}">Master Tao Masa</a></li>
-          <li><a href="{{pathFor 'pictureGallery'}}">Picture Gallery</a></li>
-          <li><a href="{{pathFor 'videoGallery'}}">Video Gallery</a></li>
-          <li><a href="{{pathFor 'testimonial'}}">Testimonial & Press</a></li>
-          <li><a href="{{pathFor 'contact'}}">Contact</a></li>
-      </ul>
+      {{#if isEng}}
+        <ul class="nav navbar-nav pull-right pull-down">
+          <li class="active"><a href="{{pathFor 'home'}}">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="{{pathFor 'masterTaoMasa'}}">Master Tao Masa</a></li>
+            <li><a href="{{pathFor 'pictureGallery'}}">Picture Gallery</a></li>
+            <li><a href="{{pathFor 'videoGallery'}}">Video Gallery</a></li>
+            <li><a href="{{pathFor 'testimonial'}}">Testimonial</a></li>
+            <li><a href="{{pathFor 'contact'}}">Contact</a></li>
+        </ul>
+      {{else}}
+        <ul class="nav navbar-nav pull-right pull-down">
+          <li class="active"><a href="{{pathFor 'home'}}">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="{{pathFor 'masterTaoMasa'}}">Chi siamo</a></li>
+            <li><a href="{{pathFor 'pictureGallery'}}">Foto</a></li>
+            <li><a href="{{pathFor 'videoGallery'}}">Video</a></li>
+            <li><a href="{{pathFor 'testimonial'}}">Testimonianze</a></li>
+            <li><a href="{{pathFor 'contact'}}">Contatti</a></li>
+        </ul>
+      {{/if}}
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </Template>
