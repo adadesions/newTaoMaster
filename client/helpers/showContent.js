@@ -1,5 +1,5 @@
 Template.showContent.onRendered(function () {
   $('.carousel').carousel({
-    interval: 1500
+    interval: 2500
   })
 })
