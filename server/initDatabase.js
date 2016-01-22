@@ -84,8 +84,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 41.871940,
-        lng: 12.567380,
+        lat: 41.242726,
+        lng: 16.502065,
         thumbnailUrl: 'https://copy.com/sdpssf6UIyUkhCkC',
         albumWidth: 50,
         albumHeight: 38,
@@ -104,8 +104,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 41.870877,
-        lng: 12.566750,
+        lat: 41.241984,
+        lng: 16.503890,
         thumbnailUrl: 'https://copy.com/aQ1zyASzFhQYlBY4',
         albumWidth: 50,
         albumHeight: 38,
@@ -124,8 +124,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 13.756331,
-        lng: 100.501765,
+        lat: 18.787747,
+        lng: 98.993128,
         thumbnailUrl: 'https://copy.com/tN6j8OporrTDuIGm',
         albumWidth: 50,
         albumHeight: 38,
@@ -210,8 +210,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 41.879345,
-        lng: 12.578037,
+        lat: 41.243662,
+        lng: 16.501240,
         thumbnailUrl: 'https://copy.com/xrE9463f8289Nubf',
         albumWidth: 50,
         albumHeight: 38,
@@ -251,8 +251,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 13.744077,
-        lng: 100.537419,
+        lat: 18.788017,
+        lng: 98.986226,
         thumbnailUrl: 'https://copy.com/ZwtgRthisSZxTYK8',
         albumWidth: 50,
         albumHeight: 38,
@@ -271,8 +271,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 45.414840,
-        lng: 9.260678 ,
+        lat: 41.243638,
+        lng: 16.503600 ,
         thumbnailUrl: 'https://copy.com/JOAjex4WZRsNR2HN',
         albumWidth: 50,
         albumHeight: 38,
@@ -291,8 +291,8 @@ Meteor.startup(function () {
           ]
       },
       {
-        lat: 45.943161,
-        lng: 24.966760,
+        lat: 44.426767,
+        lng: 26.102538,
         thumbnailUrl: 'https://copy.com/YAU0nK0c20sW9PvK',
         albumWidth: 50,
         albumHeight: 38,
@@ -310,8 +310,8 @@ Meteor.startup(function () {
           ]
       },
       {
-        lat: 38.963745,
-        lng: 35.243322,
+        lat: 36.896891,
+        lng: 30.713323,
         thumbnailUrl: 'https://copy.com/Hr9AWHN8NTyyIH6v',
         albumWidth: 50,
         albumHeight: 38,
@@ -329,8 +329,8 @@ Meteor.startup(function () {
           ]
       },
       {
-        lat: 41.883195,
-        lng: 12.587306,
+        lat: 41.244009,
+        lng: 16.501004,
         thumbnailUrl: 'https://copy.com/P0so3rxKye7kmKFy',
         albumWidth: 50,
         albumHeight: 38,
@@ -349,8 +349,8 @@ Meteor.startup(function () {
           ]
       },
       {
-        lat: 41.892684,
-        lng: 12.563939,
+        lat: 41.245547,
+        lng: 16.505080,
         thumbnailUrl: 'https://copy.com/z7x9bbDss8DTtk8I',
         albumWidth: 50,
         albumHeight: 38,
@@ -369,8 +369,8 @@ Meteor.startup(function () {
           ]
       },
       {
-        lat: 37.090240,
-        lng: -95.712891,
+        lat: 41.245114,
+        lng: 16.504802,
         thumbnailUrl: 'https://copy.com/taUDhysQvD6H7cs3',
         albumWidth: 50,
         albumHeight: 38,
@@ -389,8 +389,8 @@ Meteor.startup(function () {
           ]
       },
       {
-        lat: 46.818188,
-        lng: 8.227512,
+        lat: 46.697405,
+        lng: 7.737647,
         thumbnailUrl: 'https://copy.com/hvjmUtJxAsyBCEIi',
         albumWidth: 50,
         albumHeight: 38,
