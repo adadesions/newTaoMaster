@@ -2,8 +2,8 @@ Meteor.startup(function () {
   if(Markers.find().count() === 0){
     let marker = [
       {
-        lat: 12.927608,
-        lng: 100.877081,
+        lat: 12.870380,
+        lng: 100.895176,
         thumbnailUrl: 'https://copy.com/wkJQvBrERixvr63T',
         albumWidth: 50,
         albumHeight: 38,
@@ -22,8 +22,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 12.928305,
-        lng: 100.878890,
+        lat: 12.935303,
+        lng: 100.887966,
         thumbnailUrl: 'https://copy.com/b4Pm6YJViuKakwI9',
         albumWidth: 50,
         albumHeight: 38,
@@ -42,8 +42,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 12.931296,
-        lng: 100.882237,
+        lat: 12.983482,
+        lng: 100.922985,
         thumbnailUrl: 'https://copy.com/2mlMFqPLwcZB8EUQ',
         albumWidth: 50,
         albumHeight: 38,
@@ -62,8 +62,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 19.359228,
-        lng: 98.437269,
+        lat: 13.050048,
+        lng: 100.912342,
         thumbnailUrl: 'https://copy.com/mVW4FVfyFR3T8IAv',
         albumWidth: 50,
         albumHeight: 38,
@@ -84,8 +84,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 41.871940,
-        lng: 12.567380,
+        lat: 41.256001,
+        lng: 16.458979,
         thumbnailUrl: 'https://copy.com/sdpssf6UIyUkhCkC',
         albumWidth: 50,
         albumHeight: 38,
@@ -104,8 +104,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 41.870877,
-        lng: 12.566750,
+        lat: 41.252323,
+        lng: 16.474042,
         thumbnailUrl: 'https://copy.com/aQ1zyASzFhQYlBY4',
         albumWidth: 50,
         albumHeight: 38,
@@ -124,8 +124,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 13.756331,
-        lng: 100.501765,
+        lat: 18.787747,
+        lng: 98.993128,
         thumbnailUrl: 'https://copy.com/tN6j8OporrTDuIGm',
         albumWidth: 50,
         albumHeight: 38,
@@ -210,8 +210,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 41.879345,
-        lng: 12.578037,
+        lat: 41.247935,
+        lng: 16.488805,
         thumbnailUrl: 'https://copy.com/xrE9463f8289Nubf',
         albumWidth: 50,
         albumHeight: 38,
@@ -251,8 +251,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 13.744077,
-        lng: 100.537419,
+        lat: 18.788017,
+        lng: 98.986226,
         thumbnailUrl: 'https://copy.com/ZwtgRthisSZxTYK8',
         albumWidth: 50,
         albumHeight: 38,
@@ -271,8 +271,8 @@ Meteor.startup(function () {
         ]
       },
       {
-        lat: 45.414840,
-        lng: 9.260678 ,
+        lat: 41.243638,
+        lng: 16.503600 ,
         thumbnailUrl: 'https://copy.com/JOAjex4WZRsNR2HN',
         albumWidth: 50,
         albumHeight: 38,
@@ -291,8 +291,8 @@ Meteor.startup(function () {
           ]
       },
       {
-        lat: 45.943161,
-        lng: 24.966760,
+        lat: 44.426767,
+        lng: 26.102538,
         thumbnailUrl: 'https://copy.com/YAU0nK0c20sW9PvK',
         albumWidth: 50,
         albumHeight: 38,
@@ -310,8 +310,8 @@ Meteor.startup(function () {
           ]
       },
       {
-        lat: 38.963745,
-        lng: 35.243322,
+        lat: 36.896891,
+        lng: 30.713323,
         thumbnailUrl: 'https://copy.com/Hr9AWHN8NTyyIH6v',
         albumWidth: 50,
         albumHeight: 38,
@@ -329,8 +329,8 @@ Meteor.startup(function () {
           ]
       },
       {
-        lat: 41.883195,
-        lng: 12.587306,
+        lat: 41.238964,
+        lng: 16.518846,
         thumbnailUrl: 'https://copy.com/P0so3rxKye7kmKFy',
         albumWidth: 50,
         albumHeight: 38,
@@ -349,8 +349,8 @@ Meteor.startup(function () {
           ]
       },
       {
-        lat: 41.892684,
-        lng: 12.563939,
+        lat: 41.233090,
+        lng: 16.496873,
         thumbnailUrl: 'https://copy.com/z7x9bbDss8DTtk8I',
         albumWidth: 50,
         albumHeight: 38,
@@ -369,8 +369,8 @@ Meteor.startup(function () {
           ]
       },
       {
-        lat: 37.090240,
-        lng: -95.712891,
+        lat: 41.245114,
+        lng: 16.504802,
         thumbnailUrl: 'https://copy.com/taUDhysQvD6H7cs3',
         albumWidth: 50,
         albumHeight: 38,
@@ -389,8 +389,8 @@ Meteor.startup(function () {
           ]
       },
       {
-        lat: 46.818188,
-        lng: 8.227512,
+        lat: 46.697405,
+        lng: 7.737647,
         thumbnailUrl: 'https://copy.com/hvjmUtJxAsyBCEIi',
         albumWidth: 50,
         albumHeight: 38,
@@ -429,7 +429,6 @@ Meteor.startup(function () {
           ]
       },
     ]
-
     //insert
     _.each(marker, function (data) {
       Markers.insert(data)
