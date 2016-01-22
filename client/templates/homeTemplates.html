@@ -1,21 +1,20 @@
 <template name="home">
   {{> showContent}}
   <br><br>
-  {{> courseShow}}
+  <img class="ui centered huge image img-border" src="/header/taomasterMain.jpg" alt="TaoMasa" />
+  <br><br>
+  {{#if isEng}}
+    {{> courseShow}}
+  {{else}}
+    {{> homeItaly}}
+    {{> courseShow}}
+  {{/if}}
 </template>
 
 <template name="showContent">
   <div class="container">
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-    </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
@@ -661,10 +660,6 @@ Also the practitioner to pass to the Wind level must learn the Tao practice of I
         </div>
       </div>
       <div class="column">
-        <div class="ui right aligned container">
-          <a href="#"><i class="us flag"></i></a>
-          <a href="#"><i class="it flag"></i></a>
-        </div>
       </div>
     </div>
   </div>
