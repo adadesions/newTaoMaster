@@ -1,7 +1,14 @@
 <template name="home">
   {{> showContent}}
   <br><br>
-  {{> courseShow}}
+  <img class="ui centered huge image img-border" src="/header/taomasterMain.jpg" alt="TaoMasa" />
+  <br><br>
+  {{#if isEng}}
+    {{> courseShow}}
+  {{else}}
+    {{> homeItaly}}
+    {{> courseShow}}
+  {{/if}}
 </template>
 
 <template name="showContent">
