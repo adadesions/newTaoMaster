@@ -429,7 +429,6 @@ Meteor.startup(function () {
           ]
       },
     ]
-
     //insert
     _.each(marker, function (data) {
       Markers.insert(data)
