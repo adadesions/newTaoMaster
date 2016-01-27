@@ -29,13 +29,15 @@ Template.pictureGallery.onCreated(function() {
             nextEffect: "none",
             closeBtn: true,
             arrows: true,
-            nextClick: true,
             helpers:  {
                 thumbs : {
                     width: 120,
-                    height: 67
+                    height: 67,
                 }
             },
+            afterLoad: function () {
+                this.title = '' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+            }
           });
 
           Meteor.setTimeout(function () {
