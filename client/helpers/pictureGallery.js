@@ -32,8 +32,8 @@ Template.pictureGallery.onCreated(function() {
             nextClick: true,
             helpers:  {
                 thumbs : {
-                    width: 150,
-                    height: 150
+                    width: 120,
+                    height: 67
                 }
             },
           });
@@ -95,7 +95,7 @@ Template.pictureGallery.helpers({
         options: {
           mapTypeId: google.maps.MapTypeId.ROADMAP
         },
-        zoom: 2
+        zoom: 4
       };
     }
   }
