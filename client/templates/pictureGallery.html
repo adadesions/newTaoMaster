@@ -7,10 +7,10 @@
         <div class="map-container">
           {{> googleMap name="taoMap" options=mapGallery}}
         </div>
-        <div id="gallery" class="galleryMap" hidden>
+        <div id="gallery" class="galleryMap">
             {{#each images}}
               {{#each this.contentUrl}}
-                <a class="current-album" href="{{this}}"><img src="{{this}}" /></a>
+                <a class="current-album" data-thumbnail="group" rel="group" href="{{this}}"><img src="{{this}}" /></a>
               {{/each}}
             {{/each}}
         </div>
