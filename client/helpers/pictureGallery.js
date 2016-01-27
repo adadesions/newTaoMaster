@@ -20,11 +20,24 @@ Template.pictureGallery.onCreated(function() {
           icon: album,
           id: doc._id
         })
+
         google.maps.event.addListener(marker, 'click', function (e) {
           Session.set('albumId', doc._id)
-          $('.current-album').swipebox({            
-            useSVG: false
-          })
+          $('.current-album').fancybox({
+            type: 'image',
+            prevEffect: "none",
+            nextEffect: "none",
+            closeBtn: true,
+            arrows: true,
+            nextClick: true,
+            helpers:  {
+                thumbs : {
+                    width: 150,
+                    height: 150
+                }
+            },
+          });
+
           Meteor.setTimeout(function () {
             $('.current-album:first').trigger('click')
           },500)
@@ -41,7 +54,7 @@ Template.pictureGallery.onRendered(function () {
 
     $('#gallery').justifiedGallery({
     // option: default,
-    rowHeight: 120,
+    rowHeight: 70,
     maxRowHeight: 0,
     lastRow: 'nojustify',
     fixedHeight: false,
@@ -56,7 +69,9 @@ Template.pictureGallery.onRendered(function () {
     imagesAnimationDuration: 300
   }).on('jg.complete', function (e) {
     // this callback runs after the gallery layout is created
-      $('#gallery img').swipebox();
+      $('#gallery img').swipebox({
+        useSVG: false
+      });
   }).on('jg.resize', function (e) {
     // this callback runs after the gallery is resized
   }).on('jq.rowflush', function (e) {
