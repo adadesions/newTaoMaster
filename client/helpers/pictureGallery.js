@@ -39,7 +39,8 @@ Template.pictureGallery.onCreated(function() {
                 this.title = '' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
             }
           });
-
+          map.instance.setCenter(new google.maps.LatLng(doc.lat, doc.lng))
+          map.instance.setZoom(14)
           Meteor.setTimeout(function () {
             $('.current-album:first').trigger('click')
           },500)
@@ -97,7 +98,7 @@ Template.pictureGallery.helpers({
         options: {
           mapTypeId: google.maps.MapTypeId.ROADMAP
         },
-        zoom: 4
+        zoom: 2
       };
     }
   }

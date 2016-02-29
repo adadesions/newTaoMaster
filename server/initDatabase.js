@@ -34,7 +34,6 @@ Meteor.startup(function () {
           'http://i1305.photobucket.com/albums/s542/nutpoom/1%20Thailand%20-%20Pattaya%2011-10-2009/SNV35425_zpsuueijuft.jpg',
           'http://i1305.photobucket.com/albums/s542/nutpoom/1%20Thailand%20-%20Pattaya%2011-10-2009/SNV35419_zpskqx5sakf.jpg',
           'http://i1305.photobucket.com/albums/s542/nutpoom/1%20Thailand%20-%20Pattaya%2011-10-2009/SNV35419%20copy_zpswqrhfeh9.jpg',
-
         ]
       },
 // 2
@@ -61,7 +60,6 @@ Meteor.startup(function () {
           'http://i1305.photobucket.com/albums/s542/nutpoom/2%20Thailand%20-%20Pattaya%20-%2024-10-2009/SNV35575_zpsrb5yggoo.jpg',
           'http://i1305.photobucket.com/albums/s542/nutpoom/2%20Thailand%20-%20Pattaya%20-%2024-10-2009/SNV35573_zps9sblwgk4.jpg',
           'http://i1305.photobucket.com/albums/s542/nutpoom/2%20Thailand%20-%20Pattaya%20-%2024-10-2009/SNV35573%20copy_zpso6vkqaum.jpg',
-
         ]
       },
 // 3
